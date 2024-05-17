@@ -1,0 +1,704 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Home page */
+.home {
+  position: relative;
+  max-height: 100vh;
+}
+
+.home-p {
+  margin-top: 5%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  translate: -50%;
+  color: white;
+  font-size: 20px;
+}
+
+.btn-book {
+  border: none;
+  margin-top: 10px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  background-color: cornflowerblue;
+  color: white;
+}
+
+.section {
+  margin-bottom: 50px;
+}
+
+.running-div {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0px 50px;
+}
+
+.running-div img {
+  margin-right: 50px;
+}
+
+.kse {
+  /* font-weight: 800; */
+  margin-top: 30%;
+}
+
+.kse-p {
+  color: rgba(0, 0, 0, 0.686);
+}
+
+.main-card-div {
+  display: flex;
+  background-color: #F6F5F2;
+  margin: 50px 70px;
+  border-radius: 15px;
+  /* box-shadow: 4px 0px 10px black; */
+}
+
+.main-card-div .card-body {
+  background-color: #1B1A55;
+  color: white;
+}
+
+.main-card-div .card-body .home-card-btn {
+  background-color: #FFC100;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: white;
+}
+
+.main-card-div .card-body .home-card-btn:hover {
+  color: black;
+}
+
+
+/* <about> */
+.img {
+  position: relative;
+}
+
+.content {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+}
+
+.about-ul {
+  background-color: black;
+  color: white;
+  margin: 5px 0px;
+  padding: 50px 20px;
+}
+
+/* .types{
+    position: absolute;
+    z-index: 50;
+    top:50% ;
+    left: 40%;
+    color: white;
+  }
+  .li{
+    position: absolute;
+    z-index: 50;
+    top: 55%;
+    left: 43%;
+    color: seashell;
+    font-size: 30px;
+  } */
+
+.event-cards {
+  margin-right: 30px;
+}
+
+/* header bar Page*/
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.header-bar {
+  background-color: cornflowerblue;
+  /* padding: 10px 32px; */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header-bar div a {
+  margin-right: 30px;
+}
+
+.header-bar a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  font-size: 25px;
+}
+
+.header-bar a.active {
+  background-color: white;
+  padding: 10px 15px;
+  color: cornflowerblue;
+  border-radius: 8px;
+}
+
+
+.header-bar .active::before,
+.header-bar a:hover::before {
+  transform: scaleX(1);
+  z-index: 99;
+}
+
+.header-bar a::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  width: 100%;
+  height: -2.5px;
+  border-radius: 8px;
+  background-color: white;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: width .5s ease;
+  z-index: 99;
+
+}
+
+
+
+
+a {
+  margin-right: 16px;
+}
+
+.btn-login {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: black;
+}
+
+.btn-login:hover {
+  color: cornflowerblue;
+}
+
+.btn-signup {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: black;
+}
+
+.btn-signup:hover {
+  color: cornflowerblue;
+}
+
+
+/* Events Page */
+
+.event-div {
+  /* margin-top: 30px; */
+  color: white;
+  position: relative;
+  /* display: none; */
+  z-index: 20;
+}
+
+.add-event-bg {
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(0.8);
+}
+
+.event-img {
+  filter: brightness(0.6);
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.event-select {
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  translate: -50%;
+}
+
+.event-data {
+  position: absolute;
+  top: 100px;
+  padding: 5px;
+  /* box-shadow: 3px 2px 10px black; */
+}
+
+.event-data .event-data-img:hover {
+
+  filter: brightness(.6);
+}
+
+
+/* Add Event page */
+
+.add-event-img {
+  filter: brightness(0.6);
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.add-event-form {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  translate: -50%;
+}
+
+.add-event-form label {
+  font-weight: bold;
+}
+
+.add-event-form .inputs {
+  width: 300px;
+  border-radius: 5px;
+  border: none;
+}
+
+.add-event-form .inputs:focus {
+  outline: 2px solid cornflowerblue;
+}
+
+.add-event-form .inputs:focus {
+  caret-color: cornflowerblue;
+}
+
+.add-event-form input,
+select {
+  height: 35px;
+}
+
+
+.add-event-form-div {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  translate: -50%;
+  height: 70%;
+  background-color: rgba(255, 255, 255, 0.641);
+  width: 50%;
+  border-radius: 15px;
+  box-shadow: 1px 2px 20px black;
+}
+
+.btn-add-events {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-top: 30px;
+}
+
+.btn-add-events:hover {
+  color: cornflowerblue;
+}
+
+.text::first-letter {
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
+/* Updated events page  */
+
+.update-img {
+  position: relative;
+  filter: brightness(0.5);
+  width: 100vw;
+  height: 150vh;
+  /* min-height: min-content; */
+}
+
+/* .updated-event-div1{
+  width: 100%;
+  height: 100%;
+  background-color: #61dafb;
+} */
+
+.updated-event-div table {
+  width: 70%;
+  border: 2px solid white;
+  color: white;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  translate: -50%;
+}
+
+.updated-event-div th,
+tr,
+td {
+  border: 2px solid white;
+  padding: 10px 15px;
+}
+
+/* .updated-event-div tr:nth-child(odd){
+  background-color: aqua;
+}
+.updated-event-div tr:nth-child(even){
+  background-color: gray;
+} */
+
+.updated-main-div {
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  translate: -50%;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.773);
+  border-radius: 15px;
+}
+
+.updated-popup {
+  position: absolute;
+  color: white;
+  height: 100vh;
+  width: 100vw;
+  top: 5%;
+  left: 50%;
+  translate: -50%;
+}
+
+.updated-popup form {
+  margin-top: 30px;
+}
+
+.updated-h2 {
+  position: relative;
+}
+
+.update-close {
+  position: absolute;
+  top: 0;
+  right: 113px;
+  padding: 6px 15px;
+  border-radius: 5px;
+  color: red;
+}
+
+.updated-main-div .updated-form .inputs {
+  width: 300px;
+  border-radius: 5px;
+  border: none;
+  caret-color: cornflowerblue;
+}
+
+.updated-main-div .updated-form .inputs:focus {
+  outline: 2px solid cornflowerblue;
+}
+
+.updated-main-div .updated-form input {
+  height: 35px;
+}
+
+.updated-main-div .updated-form label {
+  margin-bottom: 15px;
+}
+
+.updated-popup .inputs {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.updated-btn {
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+}
+
+.btn-update {
+  color: cornflowerblue;
+}
+
+.btn-delete {
+  color: red;
+}
+
+.updated-form-btn {
+  margin-top: 25px;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+.updated-form-btn:hover {
+  color: cornflowerblue;
+}
+
+
+
+/* Contact Us */
+.contact {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.808);
+  padding: 10px 50px;
+}
+
+.copyrights{
+  font-size: 14px;
+}
+
+.achiv {
+  padding: 30px 0px;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.achiv img {
+  margin-right: 20px;
+}
+
+.achiv span {
+  margin-right: 200px;
+}
+
+.social-medias span {
+  margin-right: 15px;
+}
+
+
+
+.footer-logo {
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.contact-details {
+  display: flex;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  justify-content: space-around;
+}
+
+.quick-links a {
+  text-decoration: none;
+  color: white;
+
+}
+
+.quick-links a:hover {
+  text-decoration: underline;
+
+}
+
+.quick-links li {
+  list-style-type: square;
+
+}
+
+.facebook:hover {
+  fill: cornflowerblue;
+  cursor: pointer;
+}
+
+.instagram:hover {
+  fill: cornflowerblue;
+  cursor: pointer;
+}
+
+.twitter:hover {
+  fill: cornflowerblue;
+  cursor: pointer;
+}
+
+/* Profile page */
+
+.profile-div{
+color: white;
+}
+.profile-img{
+position: relative;
+height: 100vh;
+width: 100vw;
+}
+.profile-div1{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  translate: -50%;
+}
+
+.btn-logout{
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+}
+.btn-logout:hover{
+  color: cornflowerblue;
+}
+
+/* Login page */
+
+.login-img{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.login-div{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  translate: -50%;
+  background-color: rgba(255, 255, 255, 0.436);
+  height: 60%;
+  width: 60%;
+  border-radius: 8px;
+}
+
+.login-form{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  translate: -50%;
+}
+
+.login-btn{
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+
+}
+.login-btn:hover{
+  color: cornflowerblue;
+}
+.errormessage{
+  position: absolute;
+  font-weight: bold;
+  top: 85%;
+  left: 50%;
+  translate: -50%;
+}
+
+/* Signup page  */
+
+.signup-img {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+
+}
+
+.signup-div1 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  translate: -50%;
+
+}
+
+.signup-form-div {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  translate: -50%;
+  height: 62%;
+  background-color: rgba(255, 255, 255, 0.641);
+  width: 50%;
+  border-radius: 15px;
+  box-shadow: 1px 2px 20px black;
+}
+
+.signup-form {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  translate: -50%;
+}
+
+.signup-btn {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-top: 30px;
+}
+
+.signup-form label {
+  font-weight: bold;
+}
+
+.signup-form .inputs {
+  width: 300px;
+  border-radius: 5px;
+  border: none;
+}
+
+.signup-form .inputs:focus {
+  outline: 2px solid cornflowerblue;
+}
+
+.signup-form .inputs:focus {
+  caret-color: cornflowerblue;
+}
+
+.signup-form input,
+select {
+  height: 35px;
+}

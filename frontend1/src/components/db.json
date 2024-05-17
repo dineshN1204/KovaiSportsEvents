@@ -1,0 +1,64 @@
+{
+  "users": [
+    {
+      "eventName": "Football",
+      "description": "This is held on may7",
+      "category": "football",
+      "id": "580b"
+    },
+    {
+      "id": "2275",
+      "eventName": "Cricket",
+      "description": "This sunday have match",
+      "category": "hockey"
+    },
+    {
+      "id": "8412",
+      "eventName": "Cricket",
+      "description": "This sunday have match",
+      "category": "tennis"
+    },
+    {
+      "id": "8212",
+      "eventName": "Cricket",
+      "description": "This sunday have match",
+      "category": "kickboxing"
+    },
+    {
+      "id": "4527",
+      "eventName": "Cricket",
+      "description": "This sunday have match",
+      "category": "volleyball"
+    },
+    {
+      "id": "2447",
+      "eventName": "Cricket",
+      "description": "This sunday have match",
+      "category": "basketball"
+    },
+    {
+      "id": "5465",
+      "eventName": "Cricket",
+      "description": "This sunday have match",
+      "category": "athletics"
+    },
+    {
+      "id": "0128",
+      "eventName": "Cricket",
+      "description": "This sunday have match",
+      "category": "cricket"
+    },
+    {
+      "id": "4554",
+      "eventName": "Cricket",
+      "description": "This sunday have match",
+      "category": "marathon"
+    },
+    {
+      "id": "8469",
+      "eventName": "Cricket",
+      "description": "This sunday have match",
+      "category": "tennis"
+    }
+  ]
+}
