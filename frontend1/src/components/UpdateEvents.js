@@ -39,7 +39,7 @@ export default function UpdateEvents() {
                 .then(res => {
                     console.log(res);
                     setIsPopUp(false);
-                    setData(prevData => prevData.map(item => item.id === selectedEventId ? { ...item, eventName: updatedEventName, description: updatedDescription, category: updatedCategory } : item));
+                    setData(prevData => prevData.map(item => item._id === selectedEventId ? { ...item, eventName: updatedEventName, description: updatedDescription, category: updatedCategory } : item));
                 })
                 .catch(err => console.log(err));
         }
